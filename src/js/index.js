@@ -25,8 +25,8 @@ const loadBreedOptions = breeds => {
 
 const showCatInfo = cat => {
   const { imageUrl, breedName, description, temperament } = cat;
-  const html = `
-    <img src="${imageUrl}" alt="${breedName}" />
+  const html = ` <div class="img-thumb">
+  <img src="${imageUrl}" alt="${breedName}" /> </div>
     <div class="cat-data">
       <h2>${breedName}</h2>
       <p><strong>Description:</strong> ${description}</p>
