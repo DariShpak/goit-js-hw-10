@@ -66,6 +66,7 @@ const handleBreedSelection = async () => {
     showCatInfo(cat);
   } catch {
     showError();
+    catInfo.innerHTML = '';
   } finally {
     hideLoader();
   }
@@ -79,6 +80,8 @@ const initializePage = async () => {
     loadBreedOptions(breeds);
   } catch {
     showError();
+     breedSelect.innerHTML = '';
+     catInfo.innerHTML = '';
   } finally {
     hideLoader();
   }
